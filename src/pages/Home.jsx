@@ -17,7 +17,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import AICTE1 from "../assets/Images/AICTE1.jpg"
 import AICTE2 from "../assets/Images/AICTE2.jpg"
 import AICTE3 from "../assets/Images/AICTE3.jpg"
-import AICTE4 from "../assets/Images/AICTE4.jpg"
+import AICTE4 from "../assets/Images/AICTE4.png"
 import AICTE5 from "../assets/Images/AICTE5.jpg"
 
 
@@ -31,7 +31,7 @@ const Home = () => {
       {/*Section1  */}
       <div className='relative mx-auto flex flex-col w-11/12 max-w-maxContent items-center text-white justify-between gap-8'>
 
-      <div className='h-[400px] mt-[20px]  '>
+      <div className='mt-[50px] mx-3 my-7 shadow-[10px_-5px_50px_-5px] shadow-blue-200 '>
         <Carousel showThumbs={false} showStatus={false} infiniteLoop autoPlay>
             <div>
             <img src={AICTE1} alt='Image 1' className='height-[100%] , w-auto' />
@@ -49,7 +49,7 @@ const Home = () => {
             <img src={AICTE5} alt='Image 5' className='height-[100%] , w-auto' />
             </div>
         </Carousel>
-</div>
+      </div>
 
 
 
