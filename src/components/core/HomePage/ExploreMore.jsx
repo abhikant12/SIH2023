@@ -5,11 +5,10 @@ import HighlightText from "./HighlightText";
 
 
 const tabsName = [
-    "Free",
-    "New to coding",
-    "Most popular",
-    "Skill paths",
-    "Career paths",
+    "Computer Science",
+    "Mechanical Engineering",
+    "Electrical Engineering",
+    "Civil Engineering",
 ];
 
 const ExploreMore = () => {

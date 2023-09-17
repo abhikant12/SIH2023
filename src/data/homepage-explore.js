@@ -1,117 +1,94 @@
-export const HomePageExplore = [
+export const HomePageExplore =  [
     {
-        tag: 'Free',
-        courses : [
+        tag: 'Computer Science',
+        courses: [
             {
-                heading : "Learn HTML",
-                description : "This course covers the basic concepts of HTML including creating and structuring web pages, adding text, links, images, and more.",
-                level : 'Beginner',
-                lessionNumber : 6
+                heading: "Web Development with HTML",
+                description: "Learn the fundamentals of HTML for creating and structuring web pages. Covers text, links, images, and more.",
+                level: "Beginner",
+                lessonNumber: 6
             },
             {
-                heading : "Learn CSS",
-                description : "This course explores advanced topics in HTML5 and CSS3, including animations, transitions, and layout techniques",
-                level : 'Beginner',
-                lessionNumber : 6
+                heading: "Advanced CSS Techniques",
+                description: "Explore advanced HTML5 and CSS3 concepts, including animations, transitions, and layout techniques.",
+                level: "Intermediate",
+                lessonNumber: 6
             },
             {
-                heading : "Responsive Web design",
-                description : "This course teaches responsive web design techniques, allowing web pages to adapt to different devices and screen sizes",
-                level : 'Beginner',
-                lessionNumber : 6
-            },
+                heading: "Responsive Web Design",
+                description: "Master responsive web design, enabling web pages to adapt to various devices and screen sizes.",
+                level: "Intermediate",
+                lessonNumber: 6
+            }
         ]
     },
     {
-        tag: 'New to coding',
-        courses : [
+        tag: 'Mechanical Engineering',
+        courses: [
             {
-                heading : "HTML",
-                description : "This course covers the basic concepts of HTML including creating and structuring web pages, adding text, links, images, and more.",
-                level : 'Beginner',
-                lessionNumber : 6
+                heading: "Engineering Mechanics",
+                description: "Comprehensive course on engineering mechanics covering statics and dynamics.",
+                level: "Beginner",
+                lessonNumber: 10
             },
             {
-                heading : "CSS",
-                description : "This course explores advanced topics in HTML5 and CSS3, including animations, transitions, and layout techniques",
-                level : 'Beginner',
-                lessionNumber : 6
+                heading: "Thermodynamics",
+                description: "In-depth study of thermodynamics principles and applications in engineering.",
+                level: "Intermediate",
+                lessonNumber: 8
             },
             {
-                heading : "Responsive ",
-                description : "This course teaches responsive web design techniques, allowing web pages to adapt to different devices and screen sizes",
-                level : 'Beginner',
-                lessionNumber : 6
-            },
+                heading: "Material Science",
+                description: "Explore the properties and behavior of materials in engineering applications.",
+                level: "Intermediate",
+                lessonNumber: 9
+            }
         ]
     },
     {
-        tag: 'Most popular',
-        courses : [
+        tag: 'Electrical Engineering',
+        courses: [
             {
-                heading : "Java",
-                description : "This course covers the basic concepts of HTML including creating and structuring web pages, adding text, links, images, and more.",
-                level : 'Beginner',
-                lessionNumber : 6
+                heading: "Circuit Analysis",
+                description: "Learn the principles of electrical circuit analysis, covering DC and AC circuits.",
+                level: "Beginner",
+                lessonNumber: 7
             },
             {
-                heading : "Python",
-                description : "This course explores advanced topics in HTML5 and CSS3, including animations, transitions, and layout techniques",
-                level : 'Beginner',
-                lessionNumber : 6
+                heading: "Electromagnetic Fields",
+                description: "Comprehensive study of electromagnetic field theory and its applications.",
+                level: "Intermediate",
+                lessonNumber: 8
             },
             {
-                heading : "SCSS",
-                description : "This course teaches responsive web design techniques, allowing web pages to adapt to different devices and screen sizes",
-                level : 'Beginner',
-                lessionNumber : 6
-            },
+                heading: "Power Electronics",
+                description: "Master the fundamentals of power electronics and its role in electrical systems.",
+                level: "Intermediate",
+                lessonNumber: 6
+            }
         ]
     },
     {
-        tag: 'Skills paths',
-        courses : [
+        tag: 'Civil Engineering',
+        courses: [
             {
-                heading : "Flask",
-                description : "This course covers the basic concepts of HTML including creating and structuring web pages, adding text, links, images, and more.",
-                level : 'Beginner',
-                lessionNumber : 6
+                heading: "Structural Engineering",
+                description: "In-depth course on structural engineering principles, design, and analysis.",
+                level: "Beginner",
+                lessonNumber: 10
             },
             {
-                heading : "Django",
-                description : "This course explores advanced topics in HTML5 and CSS3, including animations, transitions, and layout techniques",
-                level : 'Beginner',
-                lessionNumber : 6
+                heading: "Transportation Engineering",
+                description: "Explore transportation engineering concepts and infrastructure design.",
+                level: "Intermediate",
+                lessonNumber: 8
             },
             {
-                heading : "Fast API",
-                description : "This course teaches responsive web design techniques, allowing web pages to adapt to different devices and screen sizes",
-                level : 'Beginner',
-                lessionNumber : 6
-            },
+                heading: "Environmental Engineering",
+                description: "Study the role of environmental engineering in sustainable development.",
+                level: "Intermediate",
+                lessonNumber: 7
+            }
         ]
-    },
-    {
-        tag: 'Career paths',
-        courses : [
-            {
-                heading : "Next.js",
-                description : "This course covers the basic concepts of HTML including creating and structuring web pages, adding text, links, images, and more.",
-                level : 'Beginner',
-                lessionNumber : 6
-            },
-            {
-                heading : "Nuxt.js",
-                description : "This course explores advanced topics in HTML5 and CSS3, including animations, transitions, and layout techniques",
-                level : 'Beginner',
-                lessionNumber : 6
-            },
-            {
-                heading : "Sanity",
-                description : "This course teaches responsive web design techniques, allowing web pages to adapt to different devices and screen sizes",
-                level : 'Beginner',
-                lessionNumber : 6
-            },
-        ]
-    },
+    }
 ]

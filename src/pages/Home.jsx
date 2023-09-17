@@ -31,25 +31,25 @@ const Home = () => {
       {/*Section1  */}
       <div className='relative mx-auto flex flex-col w-11/12 max-w-maxContent items-center text-white justify-between gap-8'>
 
-      <div className='mt-[40px] mx-3 -my-8 shadow-[10px_-5px_50px_-5px] shadow-blue-200 '>
-        <Carousel showThumbs={false} showStatus={false} infiniteLoop autoPlay>
-            <div>
-            <img src={AICTE1} alt='Image 1' className='height-[100%] , w-auto' />
-            </div>
-            <div>
-            <img src={AICTE2} alt='Image 2' className='height-[100%] , w-auto' />
-            </div>
-            <div>
-            <img src={AICTE3} alt='Image 3' className='height-[100%] , w-auto' />
-            </div>
-            <div>
-            <img src={AICTE4} alt='Image 4' className='height-[100%] , w-auto' />
-            </div>
-            <div>
-            <img src={AICTE5} alt='Image 5' className='height-[100%] , w-auto' />
-            </div>
-        </Carousel>
-      </div>
+        <div className='mt-[40px] mx-3 -my-8 shadow-[10px_-5px_50px_-5px] shadow-blue-200 rounded-xl  '>
+            <Carousel showThumbs={false} showStatus={false} infiniteLoop autoPlay >
+                <div>
+                <img src={AICTE1} alt='Image 1' className='height-[100%] w-auto rounded-xl ' />
+                </div>
+                <div>
+                <img src={AICTE2} alt='Image 2' className='height-[100%] w-auto rounded-xl ' />
+                </div>
+                <div>
+                <img src={AICTE3} alt='Image 3' className='height-[100%] w-auto rounded-xl ' />
+                </div>
+                <div>
+                <img src={AICTE4} alt='Image 4' className='height-[100%] w-auto rounded-xl ' />
+                </div>
+                <div>
+                <img src={AICTE5} alt='Image 5' className='height-[100%] w-auto rounded-xl ' />
+                </div>
+            </Carousel>
+        </div>
 
         <Link to={"/signup"}>                                                       
             <div className = 'group mx-auto mt-16 w-fit rounded-full bg-richblack-800 p-1 font-bold text-richblack-200 drop-shadow-[0_1.5px_rgba(255,255,255,0.25)] transition-all duration-200 hover:scale-95 hover:drop-shadow-none'>
@@ -66,7 +66,7 @@ const Home = () => {
         </div>
 
         <div className="-mt-3 w-[90%] text-center text-lg font-bold text-richblack-300">
-            With our online coding courses, you can learn at your own pace, from anywhere in the world, and get access to a wealth of resources, including hands-on projects, quizzes, and personalized feedback from instructors. 
+            With our online courses, you can learn at your own pace, from anywhere in the world, and get access to a wealth of resources, including hands-on projects, quizzes, and personalized feedback from instructors. 
         </div>
 
         <div className='flex flex-row gap-7 mt-8'>                                         {/* here we passed "Learn More" as a children in CTAButton component and here compnent is used because there are many button like this; */}
