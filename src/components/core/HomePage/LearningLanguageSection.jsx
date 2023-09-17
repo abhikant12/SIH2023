@@ -14,10 +14,10 @@ const LearningLanguageSection = () => {
 
             <div>
                 Your Swiss Knife for
-                <HighlightText text={" learning any language"} />
+                <HighlightText text={" learning anythings"} />
             </div>
 
-            <p className="text-center text-richblack-700 font-medium lg:w-[75%] mx-auto leading-6 text-base mt-3"> Using spin making learning multiple languages easy. with 20+ languages realistic voice-over, progress tracking, custom schedule and more. </p>
+            <p className="text-center text-richblack-700 font-medium lg:w-[75%] mx-auto leading-6 text-base mt-3">  Explore Accredited Aicte Programs! Leverage the Versatility of Spin for Effortless Multicourse Exploration on the AICTE. Embark on a Journey of Skill Enhancement with Accredited AICTE Courses." </p>
 
             <div className = "flex flex-col lg:flex-row items-center justify-center mt-8 lg:mt-0">
                 <img  src = {know_your_progress}  alt = "KNowYourProgressImage"  className='object-contain lg:-mr-32' />

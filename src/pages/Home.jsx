@@ -65,7 +65,7 @@ const Home = () => {
 
         <div className='text-center text-4xl font-semibold'> 
               Empower Your Future with 
-            <HighlightText text={"Coding Skills"} />            {/* here we passed "Coding Skills" text as props in component <Highlight> so we apply filter in that text part*/}
+            <HighlightText text={"AICTE"} />            {/* here we passed "Coding Skills" text as props in component <Highlight> so we apply filter in that text part*/}
         </div>
 
         <div className="-mt-3 w-[90%] text-center text-lg font-bold text-richblack-300">
@@ -84,10 +84,10 @@ const Home = () => {
         <div>
             <CodeBlocks position = {"lg:flex-row"}
                 heading = {  <div className='text-4xl font-semibold'>
-                                Unlock Your <HighlightText text={"coding potential"}/>  with our online courses
+                                Unlock Your <HighlightText text={"Tech Mastery"}/>  with our online courses
                             </div>
                           }
-                subheading = { "Our courses are designed and taught by industry experts who have years of experience in coding and are passionate about sharing their knowledge with you."}
+                subheading = { "Our courses are meticulously crafted and instructed by seasoned industry professionals with extensive coding expertise, driven by their fervor for imparting wisdom to you."}
                 ctabtn1 = { { btnText: "try it yourself",  linkto: "/signup",  active: true, } }
                 ctabtn2 = { { btnText: "learn more",  linkto: "/login",  active: false, } }
                 codeblock = {`<!DOCTYPE html>\n <html lang="en">\n<head>\n<title>This is myPage</title>\n</head>\n<body>\n<h1><a href="/">Header</a></h1>\n<nav> <a href="/one">One</a> <a href="/two">Two</a> <a href="/three">Three</a>\n</nav>\n</body>`}
@@ -99,10 +99,10 @@ const Home = () => {
         <div>
             <CodeBlocks position = {"lg:flex-row-reverse"}
                 heading = {  <div className="w-[100%] text-4xl font-semibold lg:w-[50%]">
-                                 Start <HighlightText text={"coding in seconds"} />
+                                 Dive into <HighlightText text={"Coding in seconds"} />
                             </div>
                           }
-                subheading = { "Go ahead, give it a try. Our hands-on learning environment means you'll be writing real code from your very first lesson."}
+                subheading = { "No more delays, take the plunge now. Our interactive learning environment ensures you'll be crafting real code from the very first lesson."}
                 ctabtn1 = { { btnText: "Continue Lesson",  linkto: "/signup",  active: true, } }
                 ctabtn2 = { { btnText: "Learn More",  linkto: "/login",  active: false, } }
                 codeblock = {`import React from "react";\n import CTAButton from "./Button";\nimport TypeAnimation from "react-type";\nimport { FaArrowRight } from "react-icons/fa";\n\nconst Home = () => {\nreturn (\n<div>Home</div>\n)\n}\nexport default Home;`}

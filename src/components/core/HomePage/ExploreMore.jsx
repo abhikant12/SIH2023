@@ -32,9 +32,9 @@ const ExploreMore = () => {
 
       <div className='text-4xl font-semibold text-center my-10'>
          Unlock the 
-        <HighlightText text={"Power of Code"} />
+        <HighlightText text={"Power of Learning"} />
 
-        <p className="text-center text-richblack-300 text-lg font-semibold mt-1"> Learn to build anything you can imagine </p>
+        <p className="text-center text-richblack-300 text-lg font-semibold mt-1"> Learn to Explore Your Imagination </p>
       </div>
 
       
