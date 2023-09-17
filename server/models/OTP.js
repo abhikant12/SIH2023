@@ -23,7 +23,7 @@ const OTPSchema = new mongoose.Schema({
 //a function -> to send emails of otp by using nodejs module "nodemailer" which was created in "/utils/mailSender"
 async function sendVerificationEmail(email, otp) {
     try{
-        const mailResponse = await mailSender(email, "Verification Email from StudyNotion", emailTemplate(otp));
+        const mailResponse = await mailSender(email, "Verification Email from ACITE", emailTemplate(otp));
         console.log("Email sent Successfully: ", mailResponse);
     }
     catch(error) {
