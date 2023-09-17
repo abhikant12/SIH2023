@@ -31,7 +31,7 @@ const Home = () => {
       {/*Section1  */}
       <div className='relative mx-auto flex flex-col w-11/12 max-w-maxContent items-center text-white justify-between gap-8'>
 
-      <div className='mt-[50px] mx-3 my-7 shadow-[10px_-5px_50px_-5px] shadow-blue-200 '>
+      <div className='mt-[40px] mx-3 -my-8 shadow-[10px_-5px_50px_-5px] shadow-blue-200 '>
         <Carousel showThumbs={false} showStatus={false} infiniteLoop autoPlay>
             <div>
             <img src={AICTE1} alt='Image 1' className='height-[100%] , w-auto' />
@@ -50,9 +50,6 @@ const Home = () => {
             </div>
         </Carousel>
       </div>
-
-
-
 
         <Link to={"/signup"}>                                                       
             <div className = 'group mx-auto mt-16 w-fit rounded-full bg-richblack-800 p-1 font-bold text-richblack-200 drop-shadow-[0_1.5px_rgba(255,255,255,0.25)] transition-all duration-200 hover:scale-95 hover:drop-shadow-none'>
