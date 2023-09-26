@@ -70,16 +70,12 @@ export default function Instructor(){
               <p className="text-lg font-bold text-richblack-5">Statistics</p>
               <div className="mt-4 space-y-4">
                 <div>
-                  <p className="text-lg text-richblack-200">Total Courses</p>
+                  <p className="text-lg text-richblack-200">Total Repository</p>
                   <p className="text-3xl font-semibold text-richblack-50">{courses?.length}</p>
                 </div>
                 <div>
                   <p className="text-lg text-richblack-200">Total Students</p>
                   <p className="text-3xl font-semibold text-richblack-50">{totalStudents} </p>
-                </div>
-                <div>
-                  <p className="text-lg text-richblack-200">Total Income</p>
-                  <p className="text-3xl font-semibold text-richblack-50"> Rs. {totalAmount} </p>
                 </div>
               </div>
 
@@ -90,7 +86,7 @@ export default function Instructor(){
           <div className="rounded-md bg-richblack-800 p-6">
             {/* Render 3 courses */}
             <div className="flex items-center justify-between">
-              <p className="text-lg font-bold text-richblack-5">Your Courses</p>
+              <p className="text-lg font-bold text-richblack-5">Your Repository</p>
               <Link to="/dashboard/my-courses">
                 <p className="text-xs font-semibold text-yellow-50">View All</p>
               </Link>
@@ -117,9 +113,9 @@ export default function Instructor(){
         </div>
       ) : (
         <div className="mt-20 rounded-md bg-richblack-800 p-6 py-20">
-          <p className="text-center text-2xl font-bold text-richblack-5"> You have not created any courses yet</p> 
+          <p className="text-center text-2xl font-bold text-richblack-5"> You have not created any Repository yet</p> 
           <Link to="/dashboard/add-course">
-            <p className="mt-1 text-center text-lg font-semibold text-yellow-50"> Create a course </p> 
+            <p className="mt-1 text-center text-lg font-semibold text-yellow-50"> Create a Repository </p> 
           </Link>
         </div>
       )}

@@ -29,13 +29,13 @@ export default function EnrolledCourses() {
    
   return (
     <>
-      <div className="text-3xl text-richblack-50">Enrolled Courses</div>
+      <div className="text-3xl text-richblack-50">My Resources Repository</div>
       {!enrolledCourses ? (
         <div className="grid min-h-[calc(100vh-3.5rem)] place-items-center">
           <div className="spinner"></div>
         </div>  
       ) : !enrolledCourses.length ? (
-        <p className="grid h-[10vh] w-full place-content-center text-richblack-5"> You have not enrolled in any course yet. </p>
+        <p className="grid h-[10vh] w-full place-content-center text-richblack-5"> You have not bookmark any Repository yet. </p>
       ) : (
         <div className="my-8 text-richblack-5">
           {/* Headings */}
