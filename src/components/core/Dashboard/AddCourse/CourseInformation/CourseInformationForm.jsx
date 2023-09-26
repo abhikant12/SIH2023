@@ -151,24 +151,7 @@ export default function CourseInformationForm(){
         <textarea id="courseShortDesc" placeholder="Enter Description"  {...register("courseShortDesc", { required: true })} className="form-style resize-x-none min-h-[130px] w-full" />
         {errors.courseShortDesc && (<span className="ml-2 text-xs tracking-wide text-pink-200"> Course Description is required</span> )}        
       </div>
-    
-      {/* Course Price */}
-      <div className="flex flex-col space-y-2">
-        <label className="text-sm text-richblack-5" htmlFor="coursePrice">  Resources Price <sup className="text-pink-200">*</sup> </label>
-        <div className="relative">
-          <input id="coursePrice"  placeholder="Enter Course Price" className="form-style w-full !pl-12"
-              {...register("coursePrice", {
-                required: true,
-                valueAsNumber: true,
-                pattern: {
-                  value: /^(0|[1-9]\d*)(\.\d+)?$/,
-                },
-              })}
-          />
-          <HiOutlineCurrencyRupee className="absolute left-3 top-1/2 inline-block -translate-y-1/2 text-2xl text-richblack-400" />
-        </div>
-        {errors.coursePrice && (<span className="ml-2 text-xs tracking-wide text-pink-200"> Resources Price is required </span> )}
-      </div>
+     
 
       {/* Course Category */}
       <div className="flex flex-col space-y-2">

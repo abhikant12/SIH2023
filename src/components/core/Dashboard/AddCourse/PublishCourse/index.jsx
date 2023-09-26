@@ -71,7 +71,7 @@ export default function PublishCourse() {
             <input type="checkbox"  id="public"  {...register("public")}
               className="border-gray-300 h-4 w-4 rounded bg-richblack-500 text-richblack-400 focus:ring-2 focus:ring-richblack-5"
             />
-            <span className="ml-2 text-richblack-400">  Make this course as public </span>
+            <span className="ml-2 text-richblack-400">  Make this Repository as public </span>
           </label>
         </div>
 
