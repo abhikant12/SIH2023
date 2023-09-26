@@ -43,9 +43,8 @@ export default function CoursesTable({ courses, setCourses }){
        
         <Thead>
           <Tr className="flex gap-x-10 rounded-t-md border-b border-b-richblack-800 px-6 py-2">
-            <Th className="flex-1 text-left text-sm font-medium uppercase text-richblack-100"> Courses </Th>
+            <Th className="flex-1 text-left text-sm font-medium uppercase text-richblack-100"> Repository </Th>
             <Th className="text-left text-sm font-medium uppercase text-richblack-100"> Duration </Th>
-            <Th className="text-left text-sm font-medium uppercase text-richblack-100">  Price </Th>
             <Th className="text-left text-sm font-medium uppercase text-richblack-100">  Actions </Th>
           </Tr>
         </Thead>
@@ -54,7 +53,7 @@ export default function CoursesTable({ courses, setCourses }){
 
           {courses?.length === 0 ? (
               <Tr>
-                <Td className="py-10 text-center text-2xl font-medium text-richblack-100"> No courses found </Td>
+                <Td className="py-10 text-center text-2xl font-medium text-richblack-100"> No Repository found </Td>
               </Tr>
           ) : (
             courses?.map((course) => (
@@ -82,7 +81,6 @@ export default function CoursesTable({ courses, setCourses }){
                   </div>
                 </Td>
                 <Td className="text-sm font-medium text-richblack-100"> 2hr 30min </Td>
-                <Td className="text-sm font-medium text-richblack-100"> ₹{course.price} </Td>
                 <Td className="text-sm font-medium text-richblack-100 ">
                   <button disabled={loading} onClick={() => {navigate(`/dashboard/edit-course/${course._id}`)}}  title="Edit"  className="px-2 transition-all duration-200 hover:scale-110 hover:text-caribbeangreen-300" >
                     <FiEdit2 size={20} />
