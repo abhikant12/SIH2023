@@ -1,9 +1,9 @@
 import React from "react"
 
-import FoundingStory from "../assets/Images/FoundingStory.png"
-import BannerImage1 from "../assets/Images/aboutus1.webp"
-import BannerImage2 from "../assets/Images/aboutus2.webp"
-import BannerImage3 from "../assets/Images/aboutus3.webp"
+import FoundingStory from "../assets/Images/FoundingStory.jpg"
+import BannerImage1 from "../assets/Images/aboutus1.jpg"
+import BannerImage2 from "../assets/Images/aboutus2.jpg"
+import BannerImage3 from "../assets/Images/aboutus3.jpg"
 
 import ContactFormSection from "../components/core/AboutPage/ContactFormSection"
 import LearningGrid from "../components/core/AboutPage/LearningGrid"
@@ -30,10 +30,10 @@ const About = () => {
 
           <div className="sm:h-[70px] lg:h-[150px]"> </div>             {/* define gap between heading and image */}
 
-          <div className="absolute bottom-0 left-[50%] grid w-[100%] translate-x-[-50%] translate-y-[30%] grid-cols-3 gap-3 lg:gap-5">
-            <img src={BannerImage1} alt="" />
-            <img src={BannerImage2} alt="" />
-            <img src={BannerImage3} alt="" />
+          <div className="absolute bottom-0 left-[50%] grid w-[80%] translate-x-[-50%] translate-y-[30%] grid-cols-3 gap-3  lg:gap-5">
+            <img src={BannerImage1} alt="" className="w-[100%] rounded-xl"/>
+            <img src={BannerImage2} alt="" className="w-[100%] rounded-xl"/>
+            <img src={BannerImage3} alt="" className="w-[100%] rounded-xl"/>
           </div>
         </div>
       </section>
@@ -48,18 +48,17 @@ const About = () => {
       <section>
         <div className="mx-auto flex w-11/12 max-w-maxContent flex-col justify-between gap-10 text-richblack-500">
 
-          <div className="flex flex-col items-center gap-10 lg:flex-row justify-between">                               {/* Our Founding Story paragraph and image*/}
-
-            <div className="my-24 flex lg:w-[50%] flex-col gap-10">
+          <div className="flex flex-col items-center lg:gap-[200px] lg:flex-row justify-between">                               {/* Our Founding Story paragraph and image*/}
+           
+            <div className="my-24 flex lg:w-[100%] flex-col gap-10">
                 <h1 className="bg-gradient-to-br from-[#833AB4] via-[#FD1D1D] to-[#FCB045] bg-clip-text text-4xl font-semibold text-transparent lg:w-[70%] "> Our Founding Story </h1>              
-                <p className="text-base font-medium text-richblack-300 lg:w-[95%]"> Our e-learning platform was born out of a shared vision and passion for transforming education. It all began with a group of educators, technologists, and lifelong learners who recognized the need for accessible, flexible, and high-quality learning opportunities in a rapidly evolving digital world. </p>
+                <p className="text-base font-medium text-richblack-300 lg:w-[95%]"> The All India Council for Technical Education (AICTE) is an apex regulatory body in India responsible for the planning and coordination of technical education and management education system in the country. Its founding story is rooted in the need to standardize and regulate technical education in India. </p>
                 <p className="text-base font-medium text-richblack-300 lg:w-[95%]">  As experienced educators ourselves, we witnessed firsthand the limitations and challenges of traditional education systems. We believed that education should not be confined to the walls of a classroom or restricted by geographical boundaries. We envisioned a platform that could bridge these gaps and empower individuals from all walks of life to unlock their full potential. </p>
             </div>
-            <div>
-              <img  src={FoundingStory}  alt="" className="shadow-[0_0_20px_0] shadow-[#FC6767]"  />
-            </div>
-  
+            <img  src={FoundingStory}  alt="" className="shadow-[0_0_20px_0] shadow-[#FC6767]  w-[50%] lg:w-[30%] "/>
+          
           </div>
+
 
           <div className="flex flex-col items-center lg:gap-10 lg:flex-row justify-between">                             {/* Our vision and mission */}
             <div className="my-24 flex lg:w-[40%] flex-col gap-10">

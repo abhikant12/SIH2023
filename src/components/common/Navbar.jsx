@@ -56,7 +56,7 @@ function Navbar() {
               { NavbarLinks.map((link, index) => (
 
                   <li key = {index}>
-                      { link.title === "Catalog" ? (
+                      { link.title === "Courses" ? (
 
                                  <>
                                     <div className={`group relative flex cursor-pointer items-center gap-1 ${matchRoute("/catalog/:catalogName") ? "text-yellow-25" : "text-richblack-25" }`} >

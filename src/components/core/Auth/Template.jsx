@@ -1,7 +1,6 @@
 import { FcGoogle } from "react-icons/fc"
 import { useSelector } from "react-redux"
 
-import frameImg from "../../../assets/Images/frame.png"
 import LoginForm from "./LoginForm"
 import SignupForm from "./SignupForm"
 
@@ -25,17 +24,24 @@ function Template({ title, description1, description2, image, formType }){
                 <h1 className="text-[1.875rem] font-semibold leading-[2.375rem] text-richblack-5"> {title} </h1>        
                 <p className="  mt-2 text-[1.125rem] leading-[1.625rem]">
                   <span className="text-richblack-100">{description1}</span> {" "}
-                  <span className="font-edu-sa font-bold italic text-blue-100"> {description2} </span>
+                 <span className="font-edu-sa font-bold italic text-blue-100"> {description2} </span>
                 </p>
 
                 {formType === "signup" ? <SignupForm /> : <LoginForm />}
 
             </div>
+             
+            {formType === "signup" ? (
+                    <div className="relative mx-auto w-11/12 max-w-[450px] md:mx-0 mt-12">                   
+                       <img src={image} alt="Students" width={558} height={490} loading="lazy" className='absolute -top-4 right-4 z-10 rounded-xl'/>       {/* image of girl */}
+                    </div>
+              )  : (
+                  <div className="relative mx-auto w-11/12 max-w-[450px] md:mx-0">                   
+                    <img src={image} alt="Students" width={558} height={490} loading="lazy" className='absolute -top-4 right-4 z-10 rounded-xl'/>       {/* image of girl */}
+                  </div>
+            ) }
 
-            <div className="relative mx-auto w-11/12 max-w-[450px] md:mx-0">
-                <img src={frameImg}  alt="Pattern"  width={558} height={504} loading="lazy"/>                                            {/* image of bg-cart */}
-                <img src={image} alt="Students" width={558} height={490} loading="lazy" className='absolute -top-4 right-4 z-10'/>       {/* image of girl */}
-            </div>
+            
 
           </div>
           

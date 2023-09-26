@@ -71,11 +71,6 @@ const Home = () => {
 
         <div className='flex flex-row gap-7 mt-8'>                                         {/* here we passed "Learn More" as a children in CTAButton component and here compnent is used because there are many button like this; */}
             <CTAButton active={true} linkto={"/signup"}>  Learn More </CTAButton>          {/* here active is passed as props because if active is true then button is yellow otherwise black; */}
-            <CTAButton active={false} linkto={"/login"}>  Book a Demo </CTAButton>
-        </div>
-
-        <div className="mx-3 my-7 shadow-[10px_-5px_50px_-5px] shadow-blue-200">
-            <video muted loop autoPlay className = "shadow-[20px_20px_rgba(255,255,255)]"> <source src = {Banner} type = "video/mp4"/> </video>
         </div>
 
         <div>

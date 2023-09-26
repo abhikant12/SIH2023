@@ -8,7 +8,7 @@ const LearningGridArray = [
     order: -1,
     heading: "World-Class Learning for",
     highlightText: "Anyone, Anywhere",
-    description:  "aicte partners with more than 275+ leading universities and companies to bring flexible, affordable, job-relevant online learning to individuals and organizations worldwide.",
+    description:  "Aicte partners with more than 275+ leading universities and companies to bring flexible, affordable, job-relevant online learning to individuals and organizations worldwide.",
     BtnText: "Learn More",
     BtnLink: "/",
   },
@@ -20,22 +20,22 @@ const LearningGridArray = [
   {
     order: 2,
     heading: "Our Learning Methods",
-    description: "aicte partners with more than 275+ leading universities and companies to bring",   
+    description: "Aicte partners with more than 275+ leading universities and companies to bring",   
   },
   {
     order: 3,
     heading: "Certification",
-    description:  "aicte partners with more than 275+ leading universities and companies to bring",  
+    description:  "Aicte partners with more than 275+ leading universities and companies to bring",  
   },
   {
     order: 4,
     heading: `Rating "Auto-grading"`,
-    description: "aicte partners with more than 275+ leading universities and companies to bring",     
+    description: "Aicte partners with more than 275+ leading universities and companies to bring",     
   },
   {
     order: 5,
     heading: "Ready to Work",
-    description:  "aicte partners with more than 275+ leading universities and companies to bring",
+    description:  "Aicte partners with more than 275+ leading universities and companies to bring",
   },
 ];
 
