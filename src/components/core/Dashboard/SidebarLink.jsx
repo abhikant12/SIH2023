@@ -41,14 +41,14 @@ export default function SidebarLink({ link, iconName }) {
     { link.name == "Add Resource" ? (
          
          <div>
-            <select className="form-style w-[80%] mx-7 my-1 py-2" onChange = {handleOptionChange} >
+            <select className="form-style w-[80%] mx-7 my-1 py-2 " onChange = {handleOptionChange} >
                 
                 {options.map((option, index) => (
                   <>
                     { option.label == "Add Resources" ? (
-                          <option key={index} value={option.value} disabled selected> {option.label} </option>
+                          <option key={index} value={option.value} disabled selected  className="bg-opacity-0 text-white text-opacity-20"> {option.label} </option>
                           ) : (
-                                <option key={index} value={option.value}> {option.label} </option>
+                                <option key={index} value={option.value} className="bg-opacity-0 text-white text-opacity-70"> {option.label} </option>
                               )
                       }
                   </>

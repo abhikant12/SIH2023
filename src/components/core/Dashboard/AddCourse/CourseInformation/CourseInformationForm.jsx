@@ -22,6 +22,10 @@ export default function CourseInformationForm(){
   const [loading, setLoading] = useState(false)
   const [courseCategories, setCourseCategories] = useState([])
 
+  const [coursePriceOption, setCoursePriceOption] = useState("paid");             // Default to "paid"
+
+
+
   useEffect(() => {
     const getCategories = async () => {
       setLoading(true)
@@ -135,6 +139,15 @@ export default function CourseInformationForm(){
   }
 
 
+  const handlePriceOptionChange = (option) => {
+    setCoursePriceOption(option);
+    if(option === "free") {
+      setValue("coursePrice", 0);
+    }
+  };
+
+
+
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-8 rounded-md border-[1px] border-richblack-700 bg-richblack-800 p-6" >
        
@@ -154,21 +167,47 @@ export default function CourseInformationForm(){
     
       {/* Course Price */}
       <div className="flex flex-col space-y-2">
-        <label className="text-sm text-richblack-5" htmlFor="coursePrice">  Respository Price <sup className="text-pink-200">*</sup> </label>
+        <label className="text-sm text-richblack-5" htmlFor="coursePrice"> Respository Price <sup className="text-pink-200">*</sup>  </label>
         <div className="relative">
-          <input id="coursePrice"  placeholder="Enter Course Price" className="form-style w-full !pl-12"
-              {...register("coursePrice", {
-                required: true,
-                valueAsNumber: true,
-                pattern: {
-                  value: /^(0|[1-9]\d*)(\.\d+)?$/,
-                },
-              })}
-          />
-          <HiOutlineCurrencyRupee className="absolute left-3 top-1/2 inline-block -translate-y-1/2 text-2xl text-richblack-400" />
+          <div>
+            <input type="radio" id="freeOption" name="priceOption" value="free" checked={coursePriceOption === "free"}  onChange={() => handlePriceOptionChange("free")}  />
+            <label htmlFor="freeOption"  className=" px-2  text-sm font-medium bg-opacity-0 text-white text-opacity-70   transition-all duration-200" >Free</label>
+          </div>
+         
+          <div>
+            <input  type="radio"  id="paidOption" name="priceOption"  value="paid"  checked={coursePriceOption === "paid"}  onChange={() => handlePriceOptionChange("paid")} />
+            <label htmlFor="paidOption" className=" px-2  text-sm font-medium bg-opacity-0 text-opacity-70 text-white transition-all duration-200" >Paid</label>
+          </div>
+       
+          {coursePriceOption === "paid" && (
+                <>
+                  <input  id="coursePrice" placeholder="Enter Course Price"  className="form-style w-full !pl-12  mt-3"
+                    {...register("coursePrice", {
+                      required: true,
+                      valueAsNumber: true,
+                      pattern: {
+                        value: /^(0|[1-9]\d*)(\.\d+)?$/,
+                      },
+                    })}
+                  />
+                  <HiOutlineCurrencyRupee className="absolute left-3 top-1/2 inline-block -translate-y-1/2 text-2xl text-richblack-400  mt-[30px]"/>
+                </>
+           )}
         </div>
-        {errors.coursePrice && (<span className="ml-2 text-xs tracking-wide text-pink-200"> Respository Price is required </span> )}
+          {errors.coursePrice && <span className="ml-2 text-xs tracking-wide text-pink-200">Respository Price is required</span>}
+     
+     
       </div>
+
+
+
+
+
+
+
+
+
+
 
       {/* Course Category */}
       <div className="flex flex-col space-y-2">
